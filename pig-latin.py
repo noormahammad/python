@@ -1,4 +1,4 @@
-igpay("hello")
+import sys
 
 def igpay(word):
          result='';
@@ -15,4 +15,8 @@ def igpay(word):
              else:
                  result = word[index:] + consonentCluster + "ay"
 
-         return result;
+         return result
+
+if(len(sys.argv) > 1):
+    print(igpay(str(sys.argv[1])))
+    
